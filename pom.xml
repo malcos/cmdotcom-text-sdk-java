@@ -2,11 +2,52 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>com.cm</groupId>
   <artifactId>text-sdk</artifactId>
   <version>3.0.0</version>
   <packaging>jar</packaging>
+
+  <name>text-sdk-java</name>
+  <description>This is a library for sending messages with CM.com</description>
+  <url>https://github.com/cmdotcom/text-sdk-java</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+    </license>
+  </licenses>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10</version>
+    </dependency>
+  </dependencies>
+
+  <scm>
+    <connection>scm:git:git://https://github.com/cmdotcom/text-sdk-java.git</connection>
+    <developerConnection>scm:git:ssh://https://github.com/cmdotcom/text-sdk-java.git</developerConnection>
+    <url>https://github.com/cmdotcom/text-sdk-java</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <name>Soufyan Bargach</name>
+      <email>Soufyan.Bargach@cm.com</email>
+      <organization>com.github.cmdotcom</organization>
+      <organizationUrl>http://cm.com/</organizationUrl>
+    </developer>
+  </developers>
+
   <build>
     <plugins>
       <plugin>
@@ -66,19 +107,6 @@
     </plugins>
   </build>
 
-
-  <name>text-sdk-java</name>
-  <description>This is a library for sending messages with CM.com
-  </description>
-  <url>https://github.com/cmdotcom/text-sdk-java</url>
-
-  <licenses>
-    <license>
-      <name>MIT License</name>
-      <url>http://www.opensource.org/licenses/mit-license.php</url>
-    </license>
-  </licenses>
-
   <profiles>
     <profile>
       <id>ossrh</id>
@@ -101,30 +129,4 @@
     </profile>
   </profiles>
 
-  <scm>
-    <connection>scm:git:git://https://github.com/cmdotcom/text-sdk-java.git</connection>
-    <developerConnection>scm:git:ssh://https://github.com/cmdotcom/text-sdk-java.git</developerConnection>
-    <url>https://github.com/cmdotcom/text-sdk-java</url>
-  </scm>
-
-  <developers>
-    <developer>
-      <name>Soufyan Bargach</name>
-      <email>Soufyan.Bargach@cm.com</email>
-      <organization>com.github.cmdotcom</organization>
-      <organizationUrl>http://cm.com/</organizationUrl>
-    </developer>
-  </developers>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.10</version>
-    </dependency>
-  </dependencies>
 </project>
